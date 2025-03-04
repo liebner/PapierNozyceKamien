@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(80, 82, 82, 0.845);
+}
+
+button {
+    cursor: pointer;
+}
+
+.score {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 24px;
+}
+
+.score p {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.score p.comp {
+    background-color: blue;
+
+}
+
+.options button {
+
+    margin-left: 30px;
+    border: 2px solid rgb(46, 27, 27);
+    box-shadow: 0 0 10px 6px;
+
+}
+
+.options button.on {
+    transform: scale(1.2);
+}
+
+img {
+    display: block;
+    height: 250px;
+    pointer-events: none;
+}
+
+.choices {
+    display: none;
+    margin-top: 20px;
+    font-size: 24px;
+
+}
+
+.choices.active {
+    display: block;
+}
+
+.reset-game {
+    background-color: rgb(18, 13, 13);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.reset-game:hover {
+    background-color: rgb(65, 62, 62);
+}
+
+.result-text {
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+
+}
+
+.result-text.winColor {
+    background-color: rgb(72, 132, 32);
+
+}
+
+.result-text.lostColor {
+    background-color: rgb(8, 8, 8);
+
+}
+
+.result-text.drawColor {
+    background-color: rgb(173, 85, 12);
+
+}
+
+@media (max-width: 480px) {
+
+
+    img {
+
+        height: 170px;
+
+    }
+
+    .score {
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .result-text {
+        width: 40%;
+        border-radius: 20px;
+        font-size: 25px;
+    }
+
+    .reset-game {
+
+        font-size: 20px;
+    }
+
+    .choices {
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+}
